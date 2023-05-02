@@ -1,6 +1,7 @@
 # TextSummarizer
-A repository for our NLP project on text summarization. It will implement abstractive text summarization. We will be using the 
-dataset "CNN / Daily Mail" and implement our solution using a transformer model.
+This is a repository for our NLP project on text summarization. We plan to implement abstractive text summarization and will be using the "CNN/Daily Mail" dataset to train our solution, which will be built on a transformer model.
+
+We find this project particularly interesting because, in this age of information overload, filtering through large amounts of text to extract the main ideas can be very useful. This approach can speed up learning and information retrieval, making it valuable not only for personal use, but also for universities, publishing companies, and search engines.
 
 Group Members: Carl Solli, Ashkan Aledavoud, Ali Risheh, Abhishek Rajput, Syam Jason Bonela
 

@@ -1,0 +1,78 @@
+GOOGLE EXECUTIVES HOSTED the company’s I/O developer conference this week, an annual ritual that has in recent years centered on artificial intelligence. With OpenAI’s ChatGPT and Microsoft’s Bing chatbot seen as challenging Google’s search domination, Google CEO Sundar Pichai seemed intent on projecting the message that his company is still the leader in AI—and is speeding up deployment of the technology. 
+
+Google’s own chatty large language model, Bard, was the headliner, and it is now publicly available in 180 countries. Following along behind came about a dozen generative AI product features and experiments that can do things like help programmers write code, draft emails, or generate speaker notes for Google Slides presentations.
+
+But hardly a word was said about Google Assistant, the clunkily named and voice-centric AI assistant that was the company’s previous AI champion. That was a noticeable omission, because Google Assistant took center stage at I/O on numerous occasions in years past, championed by Pichai as an all-purpose AI helper growing smarter by the year, and integrated into products like search and the Android operating system.
+
+For the better part of the past decade, Google Assistant was a star of I/O, starting with the introduction of the Home smart speaker in 2016. Later editions of the event saw the launch of a program that let outside developers tap into voice commands called actions. Then there were Google Assistant-powered products like the Nest Hub Max smart display, introduced in 2019, and a startling demo of a feature called Duplex that makes phone calls to local businesses on a user's behalf.
+
+Google was also testing a new chatbot, LaMDA, powered by text-generation technology. But then last fall OpenAI introduced ChatGPT, its answer to LaMDA, and everything changed. The bot was fluent (if flawed) and quickly drew millions of users, prompting internal strife at Google about the speed of its large language model deployment. Google released Bard in February. By April, CEO Sundar Pichai began referring to generative AI as a “super-powered assistant”—leaving Google Assistant in the shade.
+
+The case of the missing Google Assistant at the AI jamboree this week raises questions about the company’s AI strategy. Why would one of the largest AI projects at Google be left out of its generative AI push?
+
+One possible answer is that Google is scrambling to catch up after getting caught flat-footed by ChatGPT, and simply hasn’t had time to properly integrate Bard-style fluency into the older Google Assistant.
+
+In response to questions about Google Assistant’s absence from the I/O keynote, company spokesperson Katie Hutchison said that Google Assistant will power some exclusive features in Google’s new foldable smartphone, such as responding to the command “Hey Google, take a selfie.” It will also be available in the new Pixel Tablet.
+
+Google Assistant has 700 million monthly users today, Hutchison says, while Bard is “an early experiment.” Experiments and user testing to inform how to apply Bard across Google products are ongoing.
+
+FEATURED VIDEO
+
+
+Airrack Answers the Web's Most Searched Questions
+
+MOST POPULAR
+Human hands holding the Google Pixel Fold smartphone
+GEAR
+Google Doesn’t Need You to Buy Its Folding Phone
+BOONE ASHWORTH
+
+configuration of a mannequin head with multiple overlapping pieces
+BUSINESS
+You’re Probably Underestimating AI Chatbots
+STEVEN LEVY
+
+
+GEAR
+The 13 Best Electric Bikes for Every Kind of Ride
+ADRIENNE SO
+
+
+GEAR
+The 34 Best Gift Ideas for the New Grad in Your Life
+GEAR TEAM
+
+The debut of ChatGPT, Bard, and similar bots has shone new light on the shortcomings of older AI helpers such as Google Assistant and Amazon’s Alexa, which still struggle with conversational skills that come naturally to people, like being able to engage in ongoing back-and-forth dialog.
+
+Alexa and Google Assistant didn’t take off as their creators thought they would, says Arte Merritt, who is currently working on a generative AI startup but was previously global partnership leader for conversational AI at Amazon. He points to layoffs at Amazon’s Alexa team in 2022 and the Google Assistant team being reassigned to focus on Bard this year as acknowledgements of the ceiling on the capability of those so-called smart assistants, which are incapable of many things Bard or ChatGPT can do, like draft an email.
+
+Merritt says that surveys he performed of smart speaker users for three years found that people stuck to core use cases such as answering factual questions, checking the weather, playing music, and setting timers. 
+
+See What’s Next in Tech With the Fast Forward Newsletter
+A weekly dispatch from the future by Will Knight, exploring AI advances and other technology set to change our lives. Delivered every Thursday.
+Your email
+Enter your email
+
+SUBMIT
+By signing up you agree to our User Agreement (including the class action waiver and arbitration provisions), our Privacy Policy & Cookie Statement and to receive marketing and account-related emails from WIRED. You can unsubscribe at any time.
+However, upgrading Google Assistant or another more established voice assistant with generative AI is not straightforward. Since people can type questions or prompts for Bard or ChatGPT, they don’t have to clear the hurdles of voice interaction, such as recognizing different accents. And because answers must also be spoken, the verbose answers provided by the likes of Bard could be a problem.
+
+“People don’t want to hear their assistant read out a long answer to a question,” Merritt says. He believes generative AI can make Google Assistant better and more insightful, but working through the significant differences between the two conversational AI models means it can’t be done overnight—or in a panic.
+
+Get More From WIRED
+📧 Get the best stories from WIRED’s iconic archive in your inbox
+
+🎧 Our new podcast wants you to Have a Nice Future
+
+Where to find the energy to save the world
+
+The new Star Wars movies will change everything
+
+Everyone was wrong about reverse osmosis—until now
+
+AI is coming for your browser. Here’s how to use it
+
+How Google Docs proved the power of less
+
+⛺ Embrace the new season with the Gear team’s best picks for best tents, umbrellas, and robot vacuums
+

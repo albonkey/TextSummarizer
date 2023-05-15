@@ -1,0 +1,5 @@
+model/
+model.weights.npy.gz
+model.pkl.gz
+
+__pycache__/

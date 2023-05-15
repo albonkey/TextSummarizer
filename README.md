@@ -5,14 +5,41 @@ We find this project particularly interesting because, in this age of informatio
 
 Group Members: Carl Solli, Ashkan Aledavoud, Ali Risheh, Abhishek Rajput, Syam Jason Bonela
 
-## Steps
+## Getting Started
+Here is the instructions on how to work with the repository
 
-### 1. Load the dataset and preprocess the data
+### Running the model
+To see the model in action you can run `python3 main.py example.txt` which will take the `example.txt` file provided and summarize it. 
 
-### 2. Define the model architecture
+You can replace `example.txt` with a text file of your choosing.
 
-### 3. Train the model
+### Training
+To train the model you can run `python3 training.py` this will run the training loop and create the model weights for you.
 
-### 4. Test the model
+### Testing
+--
 
-### 5. Victory ???
+## Different Parts Of Repo
+
+### Preproccesing
+`preprocess.py`
+
+This is where we keep the code related to preprocessing. We're using the "CNN/Daily Mail" dataset which we tokenize, preprocess and put in buckets for a batched generator. 
+
+### Training
+`training.py`
+
+In this file we keep our training loop. 
+
+### Attention
+`attention.py`
+
+We've grouped the functions related to attention for our model here.
+
+### Model
+`model.py`
+
+This is where we define our transformer model.
+
+### Main
+Our `main.py` is what runs the file summarizer program. 

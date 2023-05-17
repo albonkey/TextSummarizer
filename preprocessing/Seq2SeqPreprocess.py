@@ -109,4 +109,4 @@ def create_inputs():
 
     return x_vocab_size, get_embedding_matrix(x_tokenizer, embedding_dim,
                                               x_vocab_size), y_vocab_size, get_embedding_matrix(
-        y_tokenizer, embedding_dim, y_vocab_size),
+        y_tokenizer, embedding_dim, y_vocab_size),x_train_padded,y_train_padded, x_val_padded, y_val_padded

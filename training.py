@@ -38,8 +38,6 @@ def training_loop(TransformerLM, train_gen, eval_gen, output_dir = "./model"):
       metrics=[tl.CrossEntropyLoss(), tl.Accuracy()] # CrossEntropyLoss and Accuracy
     )
 
-    ### END CODE HERE ###
-
     loop = training.Loop(TransformerLM(d_model=4,
                                        d_ff=16,
                                        n_layers=1,
@@ -61,4 +59,4 @@ except OSError as e:
   pass
 
 loop = training_loop(TransformerLM, train_batch_stream, eval_batch_stream)
-loop.run(1000)
+loop.run(20)

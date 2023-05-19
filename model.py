@@ -3,8 +3,8 @@ from trax import layers as tl
 
 from attention import CausalAttention
 
-def DecoderBlock(d_model, d_ff, n_heads, dropout, mode, ff_activation):
 
+def DecoderBlock(d_model, d_ff, n_heads, dropout, mode, ff_activation):
     """Returns a list of layers that implements a Transformer decoder block.
 
     The input is an activation tensor.
@@ -20,24 +20,24 @@ def DecoderBlock(d_model, d_ff, n_heads, dropout, mode, ff_activation):
     Returns:
         list: list of trax.layers.combinators.Serial that maps an activation tensor to an activation tensor.
     """
-    
+
     ### START CODE HERE (REPLACE INSTANCES OF 'None' WITH YOUR CODE) ###
-    
+
     # Create masked multi-head attention block using CausalAttention function
-    causal_attention = CausalAttention( 
-                        d_model,
-                        n_heads=n_heads,
-                        mode=mode
-                        )
+    causal_attention = CausalAttention(
+        d_model,
+        n_heads=n_heads,
+        mode=mode
+    )
 
     # Create feed-forward block (list) with two dense layers with dropout and input normalized
-    feed_forward = [ 
+    feed_forward = [
         # Normalize layer inputs
         tl.LayerNorm(),
         # Add first feed forward (dense) layer (don't forget to set the correct value for n_units)
         tl.Dense(d_ff),
         # Add activation function passed in as a parameter (you need to call it!)
-        ff_activation(), # Generally ReLU
+        ff_activation(),  # Generally ReLU
         # Add dropout with rate and mode specified (i.e., don't use dropout during evaluation)
         tl.Dropout(rate=dropout, mode=mode),
         # Add second feed forward layer (don't forget to set the correct value for n_units)
@@ -48,19 +48,20 @@ def DecoderBlock(d_model, d_ff, n_heads, dropout, mode, ff_activation):
 
     # Add list of two Residual blocks: the attention with normalization and dropout and feed-forward blocks
     return [
-      tl.Residual(
-          # Normalize layer input
-          tl.LayerNorm(),
-          # Add causal attention block previously defined (without parentheses)
-          causal_attention,
-          # Add dropout with rate and mode specified
-          tl.Dropout(rate=dropout, mode=mode)
+        tl.Residual(
+            # Normalize layer input
+            tl.LayerNorm(),
+            # Add causal attention block previously defined (without parentheses)
+            causal_attention,
+            # Add dropout with rate and mode specified
+            tl.Dropout(rate=dropout, mode=mode)
         ),
-      tl.Residual(
-          # Add feed forward block (without parentheses)
-          feed_forward
+        tl.Residual(
+            # Add feed forward block (without parentheses)
+            feed_forward
         ),
-      ]
+    ]
+
 
 def TransformerLM(vocab_size=33300,
                   d_model=512,
@@ -92,7 +93,7 @@ def TransformerLM(vocab_size=33300,
         to activations over a vocab set.
     """
     # Embedding inputs and positional encoder
-    positional_encoder = [ 
+    positional_encoder = [
         # Add embedding layer of dimension (vocab_size, d_model)
         tl.Embedding(vocab_size, d_model),
         # Use dropout with rate and mode specified
@@ -101,13 +102,13 @@ def TransformerLM(vocab_size=33300,
         tl.PositionalEncoding(max_len=max_len, mode=mode)]
 
     # Create stack (list) of decoder blocks with n_layers with necessary parameters
-    decoder_blocks = [ 
+    decoder_blocks = [
         DecoderBlock(d_model, d_ff, n_heads, dropout, mode, ff_activation) for _ in range(n_layers)]
 
     # Create the complete model as written in the figure
     return tl.Serial(
         # Use teacher forcing (feed output of previous step to current step)
-        tl.ShiftRight(mode=mode), # Specify the mode!
+        tl.ShiftRight(mode=mode),  # Specify the mode!
         # Add positional encoder
         positional_encoder,
         # Add decoder blocks
